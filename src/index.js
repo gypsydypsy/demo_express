@@ -7,8 +7,8 @@ const { initializeSocket } = require('./socket/socket');
 const mongoConnect = require('./config/db/mongoose');
 
 
-//connectDB(); 
-mongoConnect(); 
+connectDB(); 
+// mongoConnect(); 
 
 const server = https.createServer(
     {

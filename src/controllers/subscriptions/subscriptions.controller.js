@@ -1,5 +1,5 @@
-// const subscriptionRepository = require("../../models/sequelize/subscription/subscription.repository");
-const subscriptionRepository = require("../../models/mongoDb/subscription/subscription.repository");
+const subscriptionRepository = require("../../models/sequelize/subscription/subscription.repository");
+// const subscriptionRepository = require("../../models/mongoDb/subscription/subscription.repository");
 
 async function httpCreateSubscription(req, res) {
     try {

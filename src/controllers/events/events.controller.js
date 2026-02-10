@@ -1,5 +1,5 @@
-// const eventRepository = require("../../models/sequelize/event/event.repository");
-const eventRepository = require("../../models/mongoDb/event/event.repository")
+const eventRepository = require("../../models/sequelize/event/event.repository");
+// const eventRepository = require("../../models/mongoDb/event/event.repository")
 
 async function httpCreateEvent(req, res) {
     try {

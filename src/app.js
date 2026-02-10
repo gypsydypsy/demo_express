@@ -37,7 +37,7 @@ app.use((req, res) => {
     res.status(404).json({ error: "Unknown route" });
 });
 
-app.use((error, req, res) => {
+app.use((error, req, res, next) => {
     res.status(500).json({ error: "Server error"})
 })
 

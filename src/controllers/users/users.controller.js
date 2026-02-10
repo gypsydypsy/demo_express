@@ -1,7 +1,7 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-// const userRepository = require("../../models/sequelize/user/user.repository");
-const userRepository = require("../../models/mongoDb/user/user.repository");
+const userRepository = require("../../models/sequelize/user/user.repository");
+// const userRepository = require("../../models/mongoDb/user/user.repository");
 const { broadcastNotification } = require("../../socket/socket");
 
 async function httpCreateUser(req, res) {
